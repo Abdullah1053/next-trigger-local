@@ -1,0 +1,66 @@
+2024-12-10T20:41:48.848Z [INFO]: Received webhook:
+2024-12-10T20:47:03.661Z [INFO]: Received webhook:
+2024-12-11T07:38:54.229Z [INFO]: Received webhook:
+2024-12-11T07:38:54.467Z [ERROR]: Error processing webhook: TriggerApiError: 401 "Invalid API Key"
+    at ApiError.generate (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/errors.js:61:20)
+    at _doZodFetchWithRetries (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:138:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:117:24)
+    at async params.options.tracer.startActiveSpan.attributes (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:105:16)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/tracer.js:78:24)
+    at async traceZodFetch (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:104:12)
+2024-12-11T07:40:33.839Z [INFO]: Received webhook:
+2024-12-11T07:40:33.993Z [ERROR]: Error processing webhook: TriggerApiError: 401 "Invalid API Key"
+    at ApiError.generate (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/errors.js:61:20)
+    at _doZodFetchWithRetries (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:138:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:117:24)
+    at async params.options.tracer.startActiveSpan.attributes (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:105:16)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/tracer.js:78:24)
+    at async traceZodFetch (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:104:12)
+2024-12-11T07:41:44.401Z [INFO]: Received webhook:
+2024-12-11T07:41:44.497Z [ERROR]: Error processing webhook: TriggerApiError: 401 "Invalid API Key"
+    at ApiError.generate (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/errors.js:61:20)
+    at _doZodFetchWithRetries (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:138:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:117:24)
+    at async params.options.tracer.startActiveSpan.attributes (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:105:16)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/tracer.js:78:24)
+    at async traceZodFetch (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:104:12)
+2024-12-11T07:45:50.852Z [INFO]: Received webhook:
+2024-12-11T07:45:50.974Z [ERROR]: Error processing webhook: TriggerApiError: 401 "Invalid API Key"
+    at ApiError.generate (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/errors.js:61:20)
+    at _doZodFetchWithRetries (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:138:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:117:24)
+    at async params.options.tracer.startActiveSpan.attributes (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:105:16)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/tracer.js:78:24)
+    at async traceZodFetch (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:104:12)
+2024-12-11T07:46:21.389Z [INFO]: Received webhook:
+2024-12-11T07:46:21.441Z [ERROR]: Error processing webhook: TriggerApiError: 401 "Invalid API Key"
+    at ApiError.generate (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/errors.js:61:20)
+    at _doZodFetchWithRetries (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:138:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:117:24)
+    at async params.options.tracer.startActiveSpan.attributes (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:105:16)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/tracer.js:78:24)
+    at async traceZodFetch (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:104:12)
+2024-12-11T07:47:33.021Z [INFO]: Received webhook:
+2024-12-11T07:47:33.078Z [ERROR]: Error processing webhook: TriggerApiError: 401 "Invalid API Key"
+    at ApiError.generate (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/errors.js:61:20)
+    at _doZodFetchWithRetries (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:138:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:117:24)
+    at async params.options.tracer.startActiveSpan.attributes (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:105:16)
+    at async eval (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/tracer.js:78:24)
+    at async traceZodFetch (webpack-internal:///(rsc)/./node_modules/@trigger.dev/core/dist/esm/v3/apiClient/core.js:104:12)
+2024-12-11T07:51:54.679Z [INFO]: Received webhook:
+2024-12-11T07:57:38.126Z [INFO]: Received webhook:
+2024-12-11T08:37:27.314Z [INFO]: Received webhook:
+2024-12-11T08:43:21.530Z [INFO]: Received webhook:
+2024-12-11T10:34:28.113Z [INFO]: Received webhook:
+2024-12-11T10:35:21.872Z [INFO]: Received webhook:
+2024-12-11T12:02:51.589Z [INFO]: Received webhook:
+2024-12-11T12:03:24.964Z [INFO]: Received webhook:
+2024-12-11T12:06:08.608Z [INFO]: Received webhook:
+2024-12-11T12:12:07.912Z [INFO]: Received webhook:
