@@ -4,33 +4,32 @@ import axios from "axios";
 
 export const helloWorldTask = task({
   id: "hello-world",
-  // Set an optional maxDuration to prevent tasks from running indefinitely
-  maxDuration: 300, // Stop executing after 300 secs (5 mins) of compute
+  maxDuration: 300,
   run: async (payload: any, { ctx }) => {
     logger.log("Task started", { payload, ctx });
 
-    // Wait for 5 seconds (optional logic)
     await wait.for({ seconds: 5 });
 
-    // Database query logic
     let queryResult;
     let connection;
     try {
-      connection = await pool.getConnection(); // Correct method for getting a connection
-      const [rows] = await connection.query('SELECT * FROM users'); // Replace `user` with your table name
+      connection = await pool.getConnection();
+
+      const [rows] = await connection.query('SELECT * FROM users WHERE group_id = ?', [payload.group_id]);
       queryResult = rows;
 
-      axios.post('http://localhost:8000/api/handle-customers', {
-        // id: ctx.run.id,
-        // event: 'get-user',
-        data : queryResult,
+      await axios.post(payload.callback_url, {
+        id: ctx.run.id,
+        event: payload.event, // Use event from the payload
+        data: queryResult,    // Query result
       })
-        .then(response => {
-          console.log('Success:', response.data);
-        })
-        .catch(error => {
-          console.error('Error:', error);
-        });
+      .then(response => {
+        logger.log('Callback Success', { response: response.data });
+      })
+      .catch(error => {
+        logger.error('Callback Error', { error });
+        throw error; // Throw to ensure task failure if callback fails
+      });
 
       logger.log("Database query successful", { rows: queryResult });
     } catch (error) {
@@ -43,7 +42,7 @@ export const helloWorldTask = task({
     }
 
     return {
-      message: "Hello, world!",
+      message: "Task completed successfully!",
       queryResult, // Return query results as part of the task's output
     };
   },
