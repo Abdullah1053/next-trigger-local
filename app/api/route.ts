@@ -4,7 +4,6 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    // Validate the payload
     const { event, data }: { event: WebhookEvent; data: WebhookData } = body;
     if (!event || !data) {
       return NextResponse.json(
@@ -15,7 +14,6 @@ export async function POST(req: Request) {
 
     console.log("Webhook received:", { event, data });
 
-    // Call the processing function
     await processWebhookEvent(event, data);
 
     return NextResponse.json(
@@ -57,7 +55,6 @@ interface PaymentCompletedData {
 type WebhookData = OrderCreatedData | PaymentCompletedData;
 
 
-// Function to process the webhook event
 async function processWebhookEvent(event: WebhookEvent, data: WebhookData) {
     switch (event) {
       case "order.created":
